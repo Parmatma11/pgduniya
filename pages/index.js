@@ -11,7 +11,7 @@ const Home = () => {
     <div>
       <Head>
         <title> PGduniya : India's best Paying Guest Booking Website </title>
-        <link rel='icon' href="/logo.png"></link>
+        
         
       </Head>
       <Header1/>
@@ -19,11 +19,7 @@ const Home = () => {
       <Header3/>
       <div className="mx-20">
         <div className=" my-14">
-         <Image src={'/banner1.avif'} 
-         alt="banner1" 
-         width={200} 
-         height={200} 
-         className="h-50 w-full"/>
+         
         </div>
           <div className="mb-14">
            <Image src={'/banner2.avif'}

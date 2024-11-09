@@ -108,6 +108,37 @@
         color:#fff;
         text-decoration:none;
     }
+
+    #hero {
+        position: relative;
+        overflow: hidden;
+    }
+
+    #hero::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(135deg, #aa9c99, #9b948d, #a79d9b);
+        background-size: 300% 300%;
+        animation: gradientAnimation 1.5s ease infinite;
+        z-index: -1;
+    }
+
+    /* Keyframes for the gradient animation */
+    @keyframes gradientAnimation {
+        0% {
+            background-position: 0% 50%;
+        }
+        50% {
+            background-position: 100% 50%;
+        }
+        100% {
+            background-position: 0% 50%;
+        }
+    }
 </style>
 
 <section class="overflow-x-hidden">
@@ -118,7 +149,7 @@
                     <h1>Welcome to <br> <span class="display-3">PG Duniya</span></h1>
                     <h3 class="fw-light">A solution for all your PG Hunting needs.</h3>
                     <hr>
-
+    
                     <a role='button' href="/property/search" class="btn btn-primary rounded-3">Search PGs</a>
                 </div>
                 <div class="col-lg-6 d-flex justify-content-center" data-aos="fade-left" data-aos-duration="1000">
@@ -126,7 +157,6 @@
                 </div>
             </div>
         </div>
-
     </section>
 
     <section id="about" class="about min-vh-100 bg-dark-subtle d-flex align-items-center fs-5">
